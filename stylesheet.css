@@ -1,0 +1,1331 @@
+.body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevents accidental horizontal scrolling */
+    
+}
+.geo-regular {
+  font-family: "Geo", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.geo-regular-italic {
+  font-family: "Geo", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.big-shoulders-stencil{
+  font-family: "Big Shoulders Stencil", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100px;
+  font-style: normal;
+}
+
+.WELCOME{
+/*heading*/
+  display: flex;
+  font-family: "Geo", sans-serif;
+  justify-content: center; /* Centers items horizontally */
+  flex-direction: column;
+  align-items: center; /* Centers items vertically */
+  height: 50vh; /* Example to make the container full height */
+  padding-bottom: 10px;
+  color: #ffffff;
+  font-size: x-large;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+/* Styling the anchor tag to look like a button */
+.explore-btn {
+  /* Layout */
+  display: inline-block;
+  padding:20px 30px;
+  text-decoration: none; /* Removes the default underline */
+  
+  /* Typography */
+ font-family: Rubik Glitch, system-ui;
+  font-size: 14px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  
+  /* Visuals */
+  color: #000000;
+  background-color: #c6ff33;
+  border: 2px solid #333;
+  border-radius: 5px;
+  
+  /* Animation */
+  transition: all 0.3s ease;
+}
+
+/* Hover effect: Inverts the colors */
+.explore-btn:hover {
+  background-color: #eb63fa;
+  color: #000000;
+  transform: translateY(-2px); /* Lifts the button slightly */
+}
+
+/* exp button end*/
+
+/*EXPLORE BUTTON */
+.explore-button {
+  /* Layout */
+  display: inline-block;
+  padding:20px 30px;
+  text-decoration: none; /* Removes the default underline */
+  
+  /* Typography */
+ font-family: Rubik Glitch, system-ui;
+  font-size: 14px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  
+  /* Visuals */
+  color: #000000;
+  background-color: #c6ff33;
+  border: 2px solid #333;
+  border-radius: 5px;
+  
+  /* Animation */
+  transition: all 0.3s ease;
+}
+
+/* Hover effect: Inverts the colors */
+.explore-button:hover {
+  background-color: #eb63fa;
+  color: #000000;
+  transform: translateY(-2px); /* Lifts the button slightly */
+}
+/*end of EXPLORE BUTTON*/
+
+.belowheading{
+  font-family: "Big Shoulders Stencil", sans-serif;
+  display: flex;
+  justify-content: stretch;
+  background-color: #060a30;
+  padding: 3rem 2rem;
+  margin: 2rem 0;
+}
+
+.wordhead{
+  display:flexbox;
+  justify-content: center;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  color: white;
+  font-size: xx-large;
+  font-weight: 400px;
+}
+
+.homepage {
+background: rgb(10, 14, 54);
+ /* background:linear-gradient(rgb(3, 3, 36), rgb(23, 23, 59)); */
+  font-family: "Courier New", monospace;
+  margin: 0;
+  padding: 0;
+}
+
+
+/*START OF NAV CODE*/
+.nav {
+  display: flex; /* Flexbox layout for side-by-side sections */
+  min-height: 10vh; /* Make sure the container fills the viewport height */
+
+}
+
+.navlinks {
+  display: flex; /* Use flexbox for alignment */
+  justify-content: space-between; /* Vertically aligns items in the center */
+  padding: 20px, 40px; 
+  align-items: center;
+  box-sizing: border-box;
+  background-color: rgba(240, 240, 240, 0); /* clear background color */
+
+
+}
+.navlinks {
+  list-style: none; /* Remove bullet points from the list */
+  display: flex; /* Use flexbox for the list items */
+  gap: 10px; /* Add space between the links */
+  margin: 10px; /* Remove default margin */
+  padding:10px; /* EDITING GOOD padding */
+ 
+}
+
+.navlinks a {
+  color: rgb(255, 255, 255);
+  font-size:x-large; /* font size */
+  text-decoration: none; /*removes the underline*/
+  font-weight: 700; /*basically bolds the font*/
+  font-family: "Big Shoulders Stencil", sans-serif ;
+  font-style: normal;
+  font-variation-settings: "slnt" 0, "CRSV" 0.5, "ELSH" 0, "ELXP";
+}
+.navlinks a:hover {
+  /* This specifically targets the link when the mouse hovers over it */
+  color: #eb63fa; /* A lighter color on hover */
+}
+/* END OF NAV CODE*/
+
+  .header-side {
+  display: flex;
+  /* flex-direction: column;  Stacks search on top of links */
+  align-items: center;    /* Centers everything horizontally */
+  background-color: #f2eeee00; /* Matching your image gray */
+  padding:20px;
+  gap: 40px;              /* Space between search and links */
+  font-family: Arial, sans-serif;
+}
+
+/* Search Bar Styling */
+.search-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+input[type="text"] {
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;     /* Wide padding for that pill look */
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+/* Bottom Links Styling */
+.user-actions {
+  display: flex;
+  width: 100%;
+  max-width: 300px;       /* Constrain width to match the search bar */
+  justify-content:center; /* Pushes Account and Cart to edges */
+}
+
+.action-link {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/*end of search*/
+
+/* START OF STARS CONTAINER*/ 
+
+.stars-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1; /* This keeps the effect in the background */
+}
+
+.square {
+  position: absolute;
+  background-color: white;
+  border-radius: 0%; 
+  opacity: 0;
+  animation: fly linear infinite;
+  box-shadow: 0 0 10px white;
+}
+
+@keyframes fly {
+  0% {
+    /* Starts slightly above the top of the screen */
+    transform: translateY(-10vh) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    /* Ends below the bottom of the screen */
+    transform: translateY(110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/*end of stars code*/ 
+
+.set1{
+   display:flexbox;
+  justify-content: center;
+  text-align: center;
+  font-family: Big Shoulders Stencil, sans-serif;
+  padding-top: 100px;
+  padding-bottom: 20px;
+  color: white;
+  font-size: xx-large;
+  font-weight: 100px;
+}
+
+
+/*BENTO CODE*/
+
+.bento-grid {
+  display: grid; /* Turns the container into a grid */
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  grid-template-rows: repeat(3, 1fr); /* 3 equal rows */
+  gap: 1rem; /* Creates space between the boxes */
+  width: 90vw;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin: 10px auto;
+}  
+
+.bento-item {
+  /*background: linear-gradient(rgba(68, 0, 255, 0) 10%, rgb(22, 39, 223) 90%); */ 
+  border: 1px solid #000000;
+  color: #ffffff;
+  border-radius: 4px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Use flexbox to center content inside each box */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 20px;
+}
+
+/* Fonts and edits for grid text */ 
+.bento-item h3{
+  font-family: "Geo", sans-serif;
+  font-size: x-large;
+}
+
+.bento-item p{
+  font-size: medium;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Specific styling for each box */
+.box-1 {
+  grid-row: span 2; /* Spans 2 rows, making it a tall box */
+  font-size: x-large;
+   background-color: #00000085;
+}
+
+.box-2 {
+  grid-column: span 2; /* Spans 2 columns, making it a wide box */
+  grid-row:span 1;
+  background-color: #7a17eb63;
+}
+
+.box-3 {
+  grid-row: span 1 ;
+  grid-column: span 1;
+   background-color: #cc6ce684;
+}
+.box-4{
+  grid-row:span 1;
+   background-color: #19474b82;
+}
+.box-5{
+  grid-column: span 2;
+  grid-row: span 1;
+   background-color: #001eff77;
+}
+   .box-6{
+  grid-column: span 1;
+  grid-row: span 1;
+   background-color: #00000079;
+}
+/*
+   .box-7{
+  grid-column: span 1;
+  grid-row: span 1;
+   background-color: #aa2929;
+}
+   .box-8{
+  grid-column: span 1;
+  grid-row: span 1;
+   background-color: #aa2929;
+}
+   .box-9{
+  grid-column: span 1;
+  grid-row: span 1;
+   background-color: #aa2929;
+}
+*/
+
+/* START OF FOOTER CSS CODE */ 
+.eclipsetech-footer {
+  background-color: #000565; 
+  color: #fff;
+  padding: 40px 20px 20px;
+  font-family: Arial, sans-serif;
+  border-top: 5px solid #eb63fa; /* accent line  */
+}
+
+.footer-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+}
+
+.footer-section h3, .footer-section h4 {
+  color: #eb63fa; /* Use the same yellow for headings */
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.footer-section p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-section ul li a:hover {
+  color: #eb63fa;
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #ffffff;
+  font-size: 12px;
+  color: #ffffff;
+}
+
+/*PRODUCT PAGE */
+.productpage{
+background: rgb(10, 14, 54);
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif
+}
+
+.header{
+  text-align: center;
+  padding-bottom: 100px;
+  padding-top: 100px;
+  color: white;
+  font-size: x-large;
+  font-family: Geo, sans-serif;
+}
+
+
+/*BENTO CODE FOR ECLIPTIC DATABASE SERVER*/
+.bento-grid2 {
+ display: grid; /* Turns the container into a grid */
+  grid-template-columns: repeat(4, 1fr); /* 3 equal columns */
+  grid-template-rows: repeat(2, 1fr); /* 3 equal rows */
+  gap: 1rem; /* Creates space between the boxes */
+  width: 90vw;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin: 10px auto;
+}
+
+.bento-item2 {
+  border: 1px solid #000000;
+  color: #ffffff;
+  border-radius: 4px;
+  padding: 1rem;
+  padding-top: 0%;
+  padding-bottom: 0%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Use flexbox to center content inside each box */
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.headers{
+   font-family: "Big Shoulders Stencil", sans-serif ;
+}
+
+/* Specific styling for each box */
+.box1 {
+grid-row: span 1; /* Spans 2 rows, making it a tall box */
+grid-column: span 1;
+justify-content: center;
+   background-color: #27e5eca4;
+}
+
+.box2 {
+  grid-column: span 2; /* Spans 2 columns, making it a wide box */
+  grid-row: span 1;
+  justify-content: center;
+    background-color: #0c0c16;
+}
+
+.box3 {
+  grid-column: span 1;
+  grid-row: span 1;
+justify-content: center;
+   background-color: #c9e8ffa7;
+}
+
+.box4{
+    grid-column: span 1;
+  grid-row:span 1;
+     background-color: #b8baffb8;
+     justify-content: center;
+}
+
+.box5{
+  grid-column: span 2;
+  grid-row:span 1;
+  justify-content: center;
+     background-color: #6666ff;
+}
+
+.box6{
+  grid-column: span 1;
+  grid-row:span 1;
+     background-color: #6f71a1;
+}
+
+.box7{
+  grid-column: span 1;
+  grid-row:span 1;
+  justify-content: center;
+      background-color: #06363d;
+}
+
+.box8{
+  grid-column: span 1;
+  grid-row:span 1;
+      background-color: #0d6f73;
+}
+
+.box9{
+  grid-column: span 1;
+  grid-row:span 1;
+      background-color: #7a17eb63;
+}
+
+.box10{
+  grid-column: span 1;
+  grid-row:span 1;
+      background-color: #84babfc2;
+}
+
+.box11{
+  grid-column: span 4 ;
+  grid-row:span 1; 
+  background-color: #0c0c16;
+}
+
+/*END OF BENTO CODE FOR ECLIPTIC DATABASE SERVER*/
+
+/*START OF CODE FOR SERVICES PAGE*/ 
+.servicespage{
+background: rgb(10, 14, 54);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* START OF BENTO CODE FOR APOLLO SOFTWARE */ 
+.bento-grid3 {
+ display: grid; /* Turns the container into a grid */
+  grid-template-columns: repeat(4, 1fr); /* 3 equal columns */
+  grid-template-rows: repeat(4, 1fr); /* 3 equal rows */
+  gap: 1rem; /* Creates space between the boxes */
+  width: 90vw;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin: 10px auto;
+}
+
+.bento-item3 {
+  border: 1px solid #000000;
+  color: #ffffff;
+  border-radius: 4px;
+  padding: 1rem;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+  /* Use flexbox to center content inside each box */
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.head2{
+    font-family: "Big Shoulders Stencil", sans-serif ;
+}
+
+.boxS1{
+  grid-column: span 1;
+  grid-row: span 2;
+  background-color: #000000;
+}
+
+.boxS2{
+  grid-column: span 2;
+  grid-row: span 2;
+  justify-content: center;
+  background-color: #7d39eb;
+}
+
+.boxS3{
+  grid-column: span 1;
+  grid-row: span 2 ;
+  background-color: #c5ff33;
+}
+
+.b3text{
+  color: black;
+}
+
+.boxS4{
+  grid-column: span 1;
+  grid-row: span 3;
+  background-color: #242834;
+}
+
+.boxS5{
+  grid-column: span 1;
+  grid-row: span 3 ;
+  background-color: rgba(182, 255, 0)
+}
+
+.b5text{
+  color: black;
+}
+
+.head3{
+  color: #000000;
+   font-family: "Big Shoulders Stencil", sans-serif ;
+}
+
+.boxS6{
+  grid-column: span 1;
+  grid-row: span 3 ;
+  background-color: #7636ba;
+}
+
+.boxS7{
+  grid-column: span 1;
+  grid-row: span 3 ;
+  background-color: #e5e5e5; 
+}
+.b7text{
+  color: black;
+}
+
+.head3{
+  color: #000000;
+   font-family: "Big Shoulders Stencil", sans-serif ;
+}
+
+.boxS8{
+  grid-column: span 2;
+  grid-row: span 1 ;
+   background-color: #000000;
+}
+
+.boxS9{
+  grid-column: span 2;
+  grid-row: span 1 ;
+    background-color: #5415ff;
+}
+
+.boxS10{
+  grid-column: span 1;
+  grid-row: span 1;
+  justify-content: center;
+  background-color: #242834;
+}
+  
+.boxS11{
+  grid-column: span 1;
+  grid-row: span 1;
+  background: #290880;
+}
+
+.boxS12{
+  grid-column: span 1;
+  grid-row: span 1;
+  background-color: #7d39eb;
+}
+
+.boxS13{
+  grid-column: span 1;
+  grid-row: span 1;
+  background-color: #8a2be2;
+}
+
+.boxS14{
+  grid-column: span 2;
+  grid-row: span 1;
+  background-color: #b6ff00;
+}
+
+.b14text{
+  color: #000000;
+}
+
+.head14{
+    color: #000000;
+   font-family: "Big Shoulders Stencil", sans-serif ;
+}
+
+.boxS15{
+  grid-column: span 2;
+  grid-row: span 1;
+  justify-content: center;
+  background-color: #000000;
+}
+
+.purchase-button {
+  /* Layout */
+  display: inline-block;
+  padding:20px 30px;
+  text-decoration: none; /* Removes the default underline */
+  
+  /* Typography */
+ font-family: Rubik Glitch, system-ui;
+  font-size: 14px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  
+  /* Visuals */
+  color: #000000;
+  background-color: #c6ff33;
+  border: 2px solid #333;
+  border-radius: 5px;
+  
+  /* Animation */
+  transition: all 0.3s ease;
+}
+
+/* Hover effect: Inverts the colors */
+.purchase-button:hover {
+  background-color: #eb63fa;
+  color: #000000;
+  transform: translateY(-2px); /* Lifts the button slightly */
+}
+
+/* button end*/
+
+/*START OF PURCHASE PAGE*/
+
+.purchasepage{
+background: rgb(10, 14, 54);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.purchaseheader{
+  color: white;
+text-align: center;
+font-size: x-large;
+padding-top: 100px;
+padding-bottom: 10px;
+}
+
+.bento-grid4 {
+ display: grid; /* Turns the container into a grid */
+  grid-template-columns: repeat(2, 1fr); /* 3 equal columns */
+  grid-template-rows: repeat(4, 1fr); /* 3 equal rows */
+  gap: 1rem; /* Creates space between the boxes */
+  width: 90vw;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin: 10px auto;
+}
+
+.bento-item4 {
+  border: 1px solid #000000;
+  color: #ffffff;
+  border-radius: 4px;
+  padding: 1rem;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+  /* Use flexbox to center content inside each box */
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  text-align: center;
+  border-radius: 20px;
+}
+
+/* Base styles for standard text inputs */
+.input-text {
+  width: 100%;
+  padding: 12px 16px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+/* Change border color when clicked */
+.input-text:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
+
+.boxT1 {
+  grid-column: span 1;
+  grid-row: span 1;
+ background: rgb(13, 15, 153);
+}
+
+.boxT2 {
+  grid-column: span 1;
+  grid-row: span 1;
+   background: rgb(13, 15, 153);
+}
+
+.boxT3 {
+  grid-column: span 1;
+  grid-row: span 1;
+   background: rgb(13, 15, 153);
+}
+
+.boxT4{
+  grid-column: span 1;
+  grid-row: span 1;
+     background: rgb(13, 15, 153);
+}
+
+
+
+/* Specific styling for the email field */
+.input-email {
+  width: 100px;
+  padding: 12px 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+/* Subtle glow when a valid email is entered */
+.input-email:valid:not(:placeholder-shown) {
+  border-color: #28a745;
+}
+
+.error-msg {
+  color: #e74c3c;
+  font-size: 12px;
+  margin-top: 4px;
+  display: none; /* Hidden by default */
+}
+
+/* When an input is invalid, we can use JS to show the sibling error-msg */
+.input-invalid + .error-msg {
+  display: block;
+}
+
+.boxT5 {
+  grid-column: span 1;
+  grid-row: span 1;
+   background: rgb(13, 15, 153);
+}
+
+/* Styling the dropdown box */
+.select-dropdown {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: white;
+  font-size: 16px;
+  cursor: pointer;
+  appearance: none; /* Removes default browser arrow */
+  background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="grey" d="M7 10l5 5 5-5z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px top 50%;
+}
+
+.select-dropdown:hover {
+  border-color: #888;
+}
+
+.boxT6{
+     background: rgb(13, 15, 153);
+}
+
+.boxT7{
+  grid-column: span 2;
+  grid-row: span 2;
+   background: rgb(13, 15, 153);
+   justify-content: center;
+}
+
+/* Styling the submit button */
+.custom-submit-btn {
+  /* Layout and Sizing */
+  padding: 14px 70px;
+  font-size: 16px;
+  font-weight: 600;
+  
+  /* Colors and Borders */
+  background-color: #c6ff33; /* A clean blue */
+  color: rgb(2, 2, 2);
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  font-family: Rubik Glitch, system-ui;
+  font-weight: lighter;  
+  /* Interaction */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+/* Hover effect: Darkens the blue when the mouse is over it */
+.custom-submit-btn:hover {
+  background-color: #db1be5;
+}
+
+/* Active effect: Slight "push" feel when clicked */
+.custom-submit-btn:active {
+  transform: scale(0.98);
+}
+
+
+/*START OF ABOUT US PAGE CODE */
+
+.aboutUSpage{
+  background: rgb(10, 14, 54);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.bento-grid5 {
+ display: grid; /* Turns the container into a grid */
+  grid-template-columns: repeat(4, 1fr); /* 3 equal columns */
+  grid-template-rows: repeat(2 1fr); /* 3 equal rows */
+  gap: 1rem; /* Creates space between the boxes */
+  width: 90vw;
+  padding-top: 0px;
+  padding-bottom: 100px;
+  margin: 10px auto;
+}
+
+.bento-item5 {
+  border: 1px solid #000000;
+  color: #ffffff;
+  border-radius: 4px;
+  padding: 1rem;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+  /* Use flexbox to center content inside each box */
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.boxV1{
+  grid-column: span 4;
+  grid-row: span 1;
+  background-color: #000000;
+}
+
+  .logo {
+ width: 600px;
+  height: 600px;
+border-radius: 3%;
+}
+
+.welcome{
+  padding-top: 10px;
+  color: rgb(255, 255, 255);
+  font-family: Rubik Glitch, sans-serif;
+  font-weight: lighter;
+}
+
+.boxV2{
+  grid-column: span 1;
+  grid-row: span 1;
+  background-color: #242834;
+}
+
+.boxV3{
+  grid-column: span 2;
+  grid-row: span 1;
+  background-color: #b6ff00;
+   font-family: Arial, Helvetica, sans-serif;
+     justify-content: center;
+}
+
+.uptime{
+  color: #000000;
+}
+
+.boxV4{
+  grid-column: span 1;
+  grid-row: span 1;
+  background-color: #7d53ff;
+}
+
+.boxV5{
+    grid-column: span 4;
+  grid-row: span 1;
+  background-color: #290880;
+}
+
+.efficiency{
+   font-family: "Big Shoulders Stencil", sans-serif ;
+}
+
+.boxV6{
+  grid-column: span 1;
+  grid-row: span 1;
+  background-color: #000000;
+}
+
+.boxV7{
+  grid-column: span 1;
+  grid-row: span 1;
+  background-color: #b6ff00;
+}
+
+.logistics{
+  color: #000000;
+}
+
+.boxV8{
+  grid-column: span 1;
+  grid-row: span 1;
+  background-color: #db1be5;
+}
+
+.boxV9{
+  grid-column: span 1;
+  grid-row: span 1;
+  background-color: #7d39eb;
+}
+
+.boxV10{
+  grid-column: span 1;
+  grid-row: span 1;
+  background-color: #7d39eb;
+  justify-content: center;
+}
+
+.boxV11{
+  grid-column: span 1;
+  grid-row: span 1;
+  background-color: #7d39eb;
+  justify-content: center;
+}
+
+  .me{
+ width: 200px;
+  height: 200px;
+border-radius: 3%;
+}
+
+.boxV12{
+  grid-column: span 1;
+  grid-row: span 1;
+  background-color: #7d39eb;
+}
+
+.boxV13{
+  grid-column: span 1;
+  grid-row: span 1;
+  background-color: #7d39eb;
+}
+
+/*START OF CONTACT PAGE CODE*/
+
+.contactheader{
+  padding-top: 100px;
+  padding-bottom:  100px;
+  color: white;
+  text-align: center;
+  font-family:Geo, sans-serif;
+  font-weight: lighter;
+  font-size: larger;
+}
+
+.bento-grid6 {
+ display: grid; /* Turns the container into a grid */
+  grid-template-columns: repeat(2, 1fr); /* 3 equal columns */
+  grid-template-rows: repeat(2, 1fr); /* 3 equal rows */
+  gap: 1rem; /* Creates space between the boxes */
+  width: 90vw;
+  padding-top: 0px;
+  padding-bottom: 100px;
+  margin: 10px auto;
+}
+
+.bento-item6 {
+  border: 1px solid #000000;
+  color: #ffffff;
+  border-radius: 4px;
+  padding: 1rem;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+  /* Use flexbox to center content inside each box */
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  text-align: center;
+  border-radius: 20px;
+}
+
+/* Base styles for standard text inputs */
+.input-text {
+  width: 100%;
+  padding: 12px 16px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+/* Change border color when clicked */
+.input-text:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
+
+.boxU1 {
+  grid-column: span 1;
+  grid-row: span 1;
+ background: rgb(13, 15, 153);
+}
+
+.boxU2 {
+  grid-column: span 1;
+  grid-row: span 1;
+   background: rgb(13, 15, 153);
+}
+
+.boxU3 {
+  grid-column: span 1;
+  grid-row: span 1;
+   background: rgb(13, 15, 153);
+}
+
+.boxU4{
+  grid-column: span 1;
+  grid-row: span 1;
+     background: rgb(13, 15, 153);
+}
+
+
+/* Specific styling for the email field */
+.input-email {
+  width: 100px;
+  padding: 12px 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+/* Subtle glow when a valid email is entered */
+.input-email:valid:not(:placeholder-shown) {
+  border-color: #28a745;
+}
+
+.boxU5 {
+  grid-column: span 1;
+  grid-row: span 1;
+   background: rgb(13, 15, 153);
+}
+
+.boxU6{
+     grid-column: span 1;
+  grid-row: span 1;
+   background: rgb(13, 15, 153);
+   justify-content: center;
+}
+
+
+/* Styling the submit button */
+.custom-submit-btn {
+  /* Layout and Sizing */
+  padding: 14px 70px;
+  font-size: 16px;
+  font-weight: 600;
+  
+  /* Colors and Borders */
+  background-color: #c6ff33; /* A clean blue */
+  color: rgb(2, 2, 2);
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  font-family: Rubik Glitch, system-ui;
+  font-weight: lighter;  
+  /* Interaction */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+/* Hover effect: Darkens the blue when the mouse is over it */
+.custom-submit-btn:hover {
+  background-color: #db1be5;
+}
+
+/* Active effect: Slight "push" feel when clicked */
+.custom-submit-btn:active {
+  transform: scale(0.98);
+}
+
+/* --- RESPONSIVE MOBILE SETTINGS --- */
+
+/* 1. Global Viewport Adjustments */
+@media screen and (max-width: 768px) {
+    
+    /* Navigation: Stack links vertically or center them */
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .navlinks {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .header-side {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .search-wrapper input[type="text"] {
+        width: 80vw; /* Make search bar wider on mobile */
+    }
+
+    /* Adjusting Large Headings */
+    .WELCOME {
+        font-size: large;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        height: auto;
+        text-align: center;
+    }
+
+    .wordhead, .set1, .header {
+        font-size: x-large;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    /* 2. Bento Grid 1 (Home Page) - Stack all to 1 column */
+    .bento-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .box-1, .box-2, .box-3, .box-4, .box-5, .box-6 {
+        grid-column: span 1 !important;
+        grid-row: span 1 !important;
+    }
+
+    /* 3. Bento Grid 2 (Ecliptic Servers) */
+    .bento-grid2 {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10, .box11 {
+        grid-column: span 1 !important;
+        grid-row: span 1 !important;
+    }
+
+    /* 4. Bento Grid 3 (Apollo Software / Services) */
+    .bento-grid3 {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .boxS1, .boxS2, .boxS3, .boxS4, .boxS5, .boxS6, .boxS7, .boxS8, .boxS9, .boxS10, .boxS11, .boxS12, .boxS13, .boxS14, .boxS15 {
+        grid-column: span 1 !important;
+        grid-row: span 1 !important;
+    }
+
+    /* 5. Bento Grid 4 (Purchase Page) */
+    .bento-grid4 {
+        grid-template-columns: 1fr;
+    }
+
+    .boxT1, .boxT2, .boxT3, .boxT4, .boxT5, .boxT6, .boxT7 {
+        grid-column: span 1 !important;
+    }
+
+    /* 6. Bento Grid 5 (About Us Page) */
+    .bento-grid5 {
+        grid-template-columns: 1fr;
+    }
+
+    .boxV1, .boxV2, .boxV3, .boxV4, .boxV5, .boxV6, .boxV7, .boxV8, .boxV9, .boxV10, .boxV11, .boxV12, .boxV13 {
+        grid-column: span 1 !important;
+        grid-row: span 1 !important;
+    }
+
+    .logo {
+        width: 90%; /* Scale logo down for mobile */
+        height: auto;
+    }
+
+    /* 7. Bento Grid 6 (Contact Page) */
+    .bento-grid6 {
+        grid-template-columns: 1fr;
+    }
+
+    .boxU1, .boxU2, .boxU3, .boxU4, .boxU5, .boxU6 {
+        grid-column: span 1 !important;
+    }
+
+    /* 8. Utility Fixes */
+    .footer-container {
+        grid-template-columns: 1fr; /* Stack footer sections */
+        text-align: center;
+    }
+
+    .belowheading {
+        flex-direction: column;
+        padding: 2rem 1rem;
+    }
+}

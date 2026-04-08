@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="index" href="index.js"/>  -->
+    <title>Eclipse Tech- Where Future meets Tech</title>
+        <link rel="icon" type="image/png" href="1.png">
+  </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&family=Geo:ital@0;1&family=Rubik+Glitch&display=swap" rel="stylesheet"
+  />
+
+  <body class="homepage">
+    <div>
+      <!--navigation-->
+      <nav>
+        <ul class="navlinks">
+          <li><a href="index.html"> Home </a></li>
+          <li><a href="products.html"> Products </a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html"> About </a></li>
+          <li><a href="contact.html"> Contact </a></li>
+          <div class="header-side">
+            <div class="user-actions">
+              <a href="#" class="action-link">My account</a>
+            </div>
+
+            <div class="search-wrapper">
+              <input type="text" placeholder="Search" />
+            </div>
+          </div>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="WELCOME">
+      <h1>Eclipse Tech</h1>
+      <p>Engineering the Zenith.</p>
+     <a href="products.html" class="explore-btn"> Explore Now</a>
+      <!-- first page stuff-->
+    </div>
+
+    <div class="belowheading">
+      <h1 class="wordhead">
+        We at Eclipse are dedicated to building technology that can shape and
+        lead the future of Technology in our world. <br />
+        <br />
+        <a href="about.html" class="explore-button"> Learn more about us</a>
+      </h1>
+    </div>
+
+    <div class="stars-container"></div>
+
+    <!--BENTO BOXES HOME PAGE -->
+    <div class="headingforgrids">
+      <h2 class="set1">The Core Solutions</h2>
+    </div>
+
+    <div class="bento-grid">
+      <div class="bento-item box-1">
+        <h3>Hybrid Cloud Solutions</h3>
+        <br />
+        <p>
+          We design and deploy scalable cloud environments tailored to
+          enterprise needs. Our architects specialize in AWS and Azure
+          integrations that allow your business to scale resources up and down
+          in real time without hardware overhead.
+        </p>
+      </div>
+      <div class="bento-item box-2">
+        <h3>Zero-Trust Security</h3>
+        <p>
+          Protect your intellectual property with out "Security First" approach.
+          We implement end-to-end encryption, multi-factor authentication and
+          automated threat detection to keep your data safe from modern
+          cyberthreats.
+        </p>
+      </div>
+      <div class="bento-item box-3">
+        <h3>Enterprise Data Analytics</h3>
+        <p>
+          Transform raw data into actionable intelligence. Eclipse Tech deploys
+          high performance computing clusters that process massive datasets in
+          real-time, allowing your stakeholders to make data-driven decisions
+          backed by precision Analytics
+        </p>
+      </div>
+      <div class="bento-item box-4">
+        <h3>Managed IT and Business Continuity</h3>
+        <p>
+          Minimize downtime with our proactive monitoring services. We handle
+          the heavy lifting of OS patching, server maintenance and disaster
+          recovery planning, ensuring that if a hardware failure occurs, your
+          business stays online without interruption.
+        </p>
+      </div>
+      <div class="bento-item box-5">
+        <h3>Custom Software and API Integration</h3>
+        <p>
+          We develop bespoke software solutions that bridge the gap between your
+          legacy systems and modern cloud applications. Our focus is on creating
+          high-performance APIs that allow your different tech stacks to
+          communicate efficiently and securly.
+        </p>
+      </div>
+      <div class="bento-item box-6">
+        <h3>Edge Computing and IoT Connectivity</h3>
+        <p>
+          For companies requiring instant data processing, we deploy edge nodes
+          that bring computation closer to the source.This reduces latency to
+          sub-10ms levels, which is critical for IoT devices, smart
+          manufacturing and real time communication tools.
+        </p>
+      </div>
+    </div>
+    <!--
+    <div class="bento-item box-7">
+    <h3>box 7</h3>
+    <p> this is a standard box</p>
+  </div>
+    <div class="bento-item box-8">
+    <h3>box 8</h3>
+    <p> this is a standard box</p>
+  </div>
+    <div class="bento-item box-9">
+    <h3>box 9</h3>
+    <p> this is a standard box</p>
+  </div>
+</div>
+-->
+
+    <!--STARS AND SQUARES CODE-->
+
+    <script>
+      const starsContainer = document.querySelector(".stars-container");
+
+      function createSquare() {
+        // Check if container exists to prevent errors
+        if (!starsContainer) return;
+
+        const square = document.createElement("span");
+        square.className = "square";
+
+        // This makes squares between 10px and 20px
+        const size = Math.random() * 10 + 10;
+        square.style.width = `${size}px`;
+        square.style.height = `${size}px`;
+
+        const x = Math.random() * window.innerWidth;
+        const y = Math.random() * window.innerHeight;
+        square.style.left = `${x}px`;
+        square.style.top = `${y}px`;
+
+        const duration = Math.random() * 5 + 5;
+        const delay = Math.random() * 5;
+        square.style.animationDuration = `${duration}s`;
+        square.style.animationDelay = `${delay}s`;
+
+        starsContainer.appendChild(square);
+      }
+
+      // Adjust this number (50) if you want more or fewer squares
+      for (let i = 0; i < 50; i++) {
+        createSquare();
+      }
+    </script>
+
+    <!--START OF FOOTER CODE-->
+
+    <footer class="eclipsetech-footer">
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>Eclipse Tech</h3>
+          <p>Engineering the Zenith.</p>
+        </div>
+
+        <div class="footer-section">
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="products.html">Products </a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html"> About Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Support</h4>
+          <p>16 Mazina Road, La Mirina</p>
+          <p>Phone: 110-1010</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">&copy; 2026 Eclipse Tech.</div>
+    </footer>
+
+    <!--END OF FOOTER CODE-->
+  </body>
+</html>
